@@ -1,0 +1,32 @@
+About the files - 
+txn_data.csv file has transaction data
+Amount - transaction value
+PayeeRefID - end customer ID
+CreatedDate - Transaction timestamp
+TransactionStatusRefID - 2 is for sucess and anything else is failed transaction
+CustID- The Customer ID (Our Customer)
+DistributorRefID - The guy above Agent in heirarchy
+
+ticket_data.csv file is the customer care data
+TicketCreatedDateTime - Ticket created time
+CustID- The CustomerID (Our Customer)
+
+
+About the business - 
+So the Customer has XYZ app and the end customer(PayeeRefID) comes to the Customer and avails services.
+Distributor provides credit to the Customer
+
+
+Problem Statement - 
+We want you to build a churn prediction model.
+
+How to prepare data - 
+Define how many days of inactivity can be considered as churn.
+Lets call the no. of days as X.
+Take a past date, build features till past date and label in past date + x days
+Split the data into training and test.
+
+Evaluation Parementer - 
+Higher weightage is given to variable creation followed by accuracy.
+
+
